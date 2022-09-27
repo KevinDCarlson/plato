@@ -1,5 +1,5 @@
 # plato
-Some platonic solids for Asymptote
+Some Asymptote animations and interactives for group theory. Mainly about Platonic solids.
 
 solids.asy includes constructors for the Platonic solids and a function for animating their rotations.
 animation2.asy is a slight modification of the built-in animation.asy that allows better control over timing of the output gif. 
