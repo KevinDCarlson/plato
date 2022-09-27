@@ -192,20 +192,9 @@ struct animation {
     }
     return merge(loops,delays,format,options,keep);
   }
-
-  int[] makeDelays(int outSpeed = 50,int inSpeed = 20){
-    int[] delaysOutbound = array(this.pictures.length # 2,outSpeed);
-    int[] delaysInbound = array(this.pictures.length # 2,inSpeed);
-    int[] delays = delaysOutbound;
-    delays[0]=1000;
-    delays[delays.length]=1000;
-    delays.append(delaysInbound);
-    return delays;
-  }
 }
 
 animation operator init() {
   animation a=animation();
   return a;
 }
-
